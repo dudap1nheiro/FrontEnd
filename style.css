@@ -1,0 +1,137 @@
+/* Importa uma fonte retrô com estilo de jogos antigos (ótima para vibe Pokémon) */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Aplica a fonte globalmente em toda a página */
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Define a altura e largura padrão da tag HTML */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilo do corpo: imagem de fundo e largura ajustada */
+body {
+    height: 100%;
+    width: 90%;
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;
+}
+
+/* Centraliza o conteúdo principal (Pokédex) horizontalmente */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Define o tamanho da imagem principal da Pokédex */
+#figPokedex {
+    width: 40%;
+    height: 60%;
+}
+
+/* Container principal com posicionamento relativo para os elementos internos */
+#container {
+    position: relative;
+}
+
+/* Exibe a imagem do Pokémon na tela da Pokédex */
+#imagemPoke {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: auto;
+    height: 10%;
+}
+
+/* Caixa de busca para digitar o nome ou ID do Pokémon */
+#form {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    box-shadow: -2px 2px #363535;
+}
+
+/* Exibe o nome do Pokémon consultado */
+#nome {
+    position: absolute;
+    bottom: 33%;
+    left: 15%;
+}
+
+/* Mostra informações básicas do Pokémon (tipo, altura etc.) */
+#info {
+    position: absolute;
+    bottom: 28%;
+    left: 15%;
+    font-size: 80%;
+}
+
+/* Mostra informações complementares do Pokémon (peso, habilidades etc.) */
+#info2 {
+    position: absolute;
+    bottom: 16%;
+    left: 15%;
+}
+
+/* Contêiner dos botões "voltar" e "próximo", centralizado e espaçado */
+#botoes {
+    position: absolute;
+    bottom: 9%;
+    display: flex;
+    justify-content: space-between;
+    left: 25%;
+    width: 44%;
+}
+
+/* Define o tamanho da fonte nos campos de entrada de nome e ID */
+#idpokemon,
+#nomepokemon {
+    font-size: 16px;
+}
+
+/* Estilo visual dos botões principais com aparência vibrante e redonda */
+#btnproximo,
+#btnvoltar,
+button {
+    background: radial-gradient(circle, #ffcb05 0%, #ff0000 100%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #3b4cca;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Animação ao passar o mouse sobre os botões */
+#btnproximo:hover,
+#btnvoltar:hover,
+button:hover {
+    background: radial-gradient(circle, #3b4cca 0%, #ff0000 100%);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão decorativo no topo esquerdo da Pokédex */
+#btnintrot {
+    position: absolute;
+    bottom: 79%;
+    left: 62%;
+    width: 12%;
+    height: 4%;
+}
+
+/* Botão decorativo no topo direito da Pokédex */
+#btnintrop {
+    position: absolute;
+    bottom: 79%;
+    left: 48%;
+    width: 13%;
+    height: 4%;
+}
